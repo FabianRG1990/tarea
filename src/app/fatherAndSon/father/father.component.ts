@@ -1,4 +1,9 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
+
+interface padre {
+  nombre: string;
+  ejemplo: number;
+}
 
 @Component({
   selector: 'app-father',
@@ -6,7 +11,17 @@ import { Component} from '@angular/core';
 })
 export class FatherComponent  {
 
-  constructor() { }
+  tareas: padre[] = [
+    {
+      nombre: 'tarea 1',
+      ejemplo: 100,
+    },
+    {
+      nombre: 'tarea 2',
+      ejemplo: 200,
+
+    }
+  ];
 
 }
 
